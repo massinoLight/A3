@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jupyter Notebook Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      /* Style pour le corps de la page */
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        background-color: #F5F5F5;
+      }
+
+      /* Style pour la zone principale */
+      .jp-Notebook-panel {
+        box-sizing: border-box;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Style pour la barre d'outils */
+      .jp-Notebook-toolbar {
+        display: flex;
+        align-items: center;
+        background-color: #F5F5F5;
+        border-bottom: 1px solid #D3D3D3;
+        padding: 6px;
+      }
+
+      .fa {
+        margin-right: 8px;
+        cursor: pointer;
+      }
+
+      /* Style pour les cellules de code */
+      .jp-CodeCell {
+        margin-top: 12px;
+        background-color: #FFF;
+        border: 1px solid #D3D3D3;
+        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        overflow: hidden;
+      }
+
+      .jp-Cell-inputWrapper {
+        padding: 8px;
+        border-bottom: 1px solid #D3D3D3;
+        background-color: #F9F9F9;
+        white-space: pre-wrap;
+      }
+
+      .jp-Cell-outputWrapper {
+        padding: 8px;
+        border-bottom: 1px solid #D3D3D3;
+      }
+
+      .jp-InputPrompt {
+        font-weight: bold;
+        margin-right: 4px;
+        color: #999;
+      }
+
+      .jp-CodeMirrorWrapper {
+        height: 100%;
+        border: none;
+      }
+
+      .jp-OutputPrompt {
+        font-weight: bold;
+        margin-right: 4px;
+        color: #999;
+      }
+
+      .jp-OutputArea-outputText {
+        white-space: pre-wrap;
+      }
+
+      /* Style pour la zone de sortie */
+      .jp-OutputArea {
+        margin-top: 8px;
+        padding: 6px;
+        background-color: #F9F9F9;
+        border: 1px solid #D3D3D3;
+        border-radius: 3px;
+        overflow: auto;
+      }
+
+      .jp-OutputArea-executeResult {
+        border-top: 1px solid #D3D3D3;
+        margin-top: 8px;
+        padding-top: 8px;
+      }
+          .jp-InputArea-editor {
+             font-size: 16px;
+             height: 200px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="jp-Notebook-panel">
+      <div class="jp-Notebook-panelHeader">
+        <div class="jp-Notebook-toolbar">
+          <i class="fa fa-play"></i>
+          <i class="fa fa-stop"></i>
+          <i class="fa fa-pause"></i>
+          <i class="fa fa-step-forward"></i>
+          <i class="fa fa-step-backward"></i>
+          <i class="fa fa-fast-forward"></i>
+          <i class="fa fa-fast-backward"></i>
+          <i class="fa fa-chevron-up"></i>
+          <i class="fa fa-chevron-down"></i>
+          <i class="fa fa-save"></i>
+          <i class="fa fa-upload"></i>
+          <i class="fa fa-download"></i>
+          <i class="fa fa-undo"></i>
+          <i class="fa fa-redo"></i>
+        </div>
+      </div>
+      <div class="jp-Notebook">
+        <div class="jp-Notebook-cells">
+          <div class="jp-CodeCell jp-Notebook-cell">
+            <div class="jp-Cell-inputWrapper">
+              <div class="jp-InputPrompt">In [1]:</div>
+              <div class="jp-CodeMirrorWrapper">
+                <textarea class="jp-CodeMirror cm-s-jupyter"></textarea>
+              </div>
+            </div>
+            <div class="jp-Cell-outputWrapper">
+              <div class="jp-OutputArea">
+                <div class="jp-OutputArea-output jp-OutputArea-executeResult">
+                  <div class="jp-OutputPrompt">Out[1]:</div>
+                  <div class="jp-OutputArea-outputText"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
